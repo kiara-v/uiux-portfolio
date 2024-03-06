@@ -170,7 +170,7 @@
   }
   .mobile-menu:after {
     transition-delay: 0.15s;
-    background-color: #1c1d25;
+    background-color: #060c1d;
     background: linear-gradient(270deg, #235aa6, #101b3b);
     z-index: 25;
   }

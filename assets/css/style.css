@@ -200,7 +200,7 @@ html {
 }
 body {
   background: #f3f3f3;
-  color: #1c1d25;
+  color: #060c1d;
   font-family: LibreBaskerville-Regular, Palatino Linotype, Times New Roman,
     serif;
   -webkit-transform: translateZ(0);
@@ -218,17 +218,17 @@ body.overflow {
   overflow: hidden;
 }
 ::-moz-selection {
-  background: #1c1d25;
+  background: #060c1d;
   color: #f3f3f3;
   text-shadow: none;
 }
 ::selection {
-  background: #1c1d25;
+  background: #060c1d;
   color: #f3f3f3;
   text-shadow: none;
 }
 ::-webkit-selection {
-  background: #1c1d25;
+  background: #060c1d;
   color: #f3f3f3;
   text-shadow: none;
 }
@@ -424,13 +424,13 @@ hr {
   margin-top: 1.5em;
   margin-bottom: 0;
   border: none;
-  border-top-color: #1c1d25;
+  border-top-color: #060c1d;
   border-top-style: solid;
   border-top-width: 1px;
   padding-top: 1.4375em;
 }
 a {
-  color: #1c1d25;
+  color: #060c1d;
   text-decoration: none;
 }
 a:not([class]) {
@@ -818,7 +818,7 @@ button[disabled] {
 }
 .the-button.ghost:hover {
   background-color: #fff;
-  color: #1c1d25;
+  color: #060c1d;
 }
 .button-big {
   font-size: 2em;
@@ -833,7 +833,7 @@ button[disabled] {
   width: 100%;
   display: block;
   position: relative;
-  background-color: #1c1d25;
+  background-color: #060c1d;
   z-index: 2;
 }
 .main-hero {
@@ -1282,7 +1282,7 @@ button[disabled] {
 }
 .bright-theme .social-vertical-stripe li:focus svg path,
 .bright-theme .social-vertical-stripe li:hover svg path {
-  fill: #1c1d25;
+  fill: #060c1d;
 }
 .bright-theme .hero-go-next {
   color: #4c4f65;
@@ -1466,10 +1466,10 @@ button[disabled] {
   fill: #4c4f65;
 }
 .bright-theme .nav-links a:hover {
-  color: #1c1d25;
+  color: #060c1d;
 }
 .bright-theme .nav-links a:hover .nav-link-icon svg path {
-  fill: #1c1d25;
+  fill: #060c1d;
 }
 .bright-theme .main-navigation.view-in-scroll {
   background: rgba(28, 29, 37, 0.9);
@@ -1526,7 +1526,7 @@ button[disabled] {
   width: 80%;
   opacity: 1;
   height: 480px;
-  background-color: #1c1d25;
+  background-color: #060c1d;
   position: relative;
   box-shadow: 0 20px 80px 0 rgba(0, 0, 0, 0.45);
   margin-left: auto;
@@ -1544,7 +1544,7 @@ button[disabled] {
   width: 100%;
   display: block;
   content: " ";
-  background: #1c1d25;
+  background: #060c1d;
   opacity: 0.6;
   transition: opacity 0.3s ease;
   z-index: 2;
@@ -1600,7 +1600,7 @@ button[disabled] {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #1c1d25;
+  background-color: #060c1d;
   background: linear-gradient(270deg, #235aa6, #101b3b);
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
@@ -1854,7 +1854,7 @@ button[disabled] {
 .experiment .experiment-image {
   width: 230px;
   height: 230px;
-  background-color: #1c1d25;
+  background-color: #060c1d;
   border-radius: 50%;
   display: block;
   margin: 45px auto 30px;
@@ -1913,7 +1913,7 @@ button[disabled] {
   top: 0.6em;
   left: -12px;
   height: 1px;
-  background-color: #1c1d25;
+  background-color: #060c1d;
   width: 7px;
 }
 .experiment .experiment-title-area .experiment-title {
@@ -1933,7 +1933,7 @@ button[disabled] {
   content: "";
   top: 45%;
   height: 2px;
-  background-color: #1c1d25;
+  background-color: #060c1d;
   width: 30px;
 }
 .experiment .experiment-number-area:after,
@@ -2140,7 +2140,7 @@ button[disabled] {
   height: 200px;
 }
 .works-index .work-index-item .works-index-section .work-index-title {
-  color: #1c1d25;
+  color: #060c1d;
   font-size: 3.75em;
 }
 .works-index .work-index-item .works-index-section .work-index-subtitle {
@@ -2176,7 +2176,7 @@ button[disabled] {
   background-position: 50%;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #1c1d25;
+  background-color: #060c1d;
   transition: opacity 0.3s,
     -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
   transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1), opacity 0.3s;
@@ -2601,7 +2601,7 @@ main {
 .privacy {
   min-height: 100vh;
   color: #f3f3f3;
-  background-color: #1c1d25;
+  background-color: #060c1d;
   padding-top: 140px;
   padding-bottom: 55px;
   transition: all 0.3s;
@@ -2623,7 +2623,7 @@ main {
 }
 .bright-theme .privacy {
   background-color: #e6e6e6;
-  color: #1c1d25;
+  color: #060c1d;
 }
 .some-shapes {
   display: none;

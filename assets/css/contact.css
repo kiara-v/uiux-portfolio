@@ -259,7 +259,7 @@ fieldset {
     z-index: 60;
   }
   .about-contact .half-contact.is-about .contact-info {
-    color: #1c1d25;
+    color: #060c1d;
   }
   .about-contact .half-contact.is-about .giga-text {
     top: -10px;
@@ -269,7 +269,7 @@ fieldset {
   .about-contact .half-contact.is-contact {
     -webkit-transform: translateY(100%);
     transform: translateY(100%);
-    background-color: rgba(28, 29, 37, 0.985);
+    background-color: #060c1d;
     left: auto;
     right: 0;
     transition: opacity 0.3s,
@@ -289,7 +289,7 @@ fieldset {
     opacity: 0.03;
   }
   .about-contact .half-contact.is-contact input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 1000px #1c1d25 inset;
+    -webkit-box-shadow: 0 0 0 1000px #060c1d inset;
     -webkit-text-fill-color: #fff !important;
   }
   .about-contact .giga-text {
@@ -441,7 +441,7 @@ fieldset {
     display: block;
   }
   .about-me-list li svg path {
-    fill: #1c1d25;
+    fill: #060c1d;
     transition: all 0.3s;
   }
   .about-me-list li:hover .about-me-list-label {

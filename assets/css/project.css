@@ -5,7 +5,7 @@
     padding: 85px 0;
     text-align: center;
     overflow: hidden;
-    background-color: #1c1d25;
+    background-color: #060c1d;
   }
   .single-work-giga-text {
     font-size: 11.875em;
@@ -389,7 +389,7 @@
     height: 70px;
   }
   .next-work .next-work-arrow svg path {
-    fill: #1c1d25;
+    fill: #060c1d;
     transition: all 0.3s ease;
   }
   .next-work:focus .next-work-lead,
