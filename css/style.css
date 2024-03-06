@@ -2018,7 +2018,7 @@ textarea {
   background: #f06449;
   z-index: 9;
 }
-.the-form .input:nth-child(3):after,
+/* .the-form .input:nth-child(3):after, */
 .the-form .input:nth-child(3):before {
   bottom: 6px;
 }
