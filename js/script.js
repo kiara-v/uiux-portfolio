@@ -6269,7 +6269,7 @@ var Util = (function (t) {
           Util.sendGAEvent("Contact", "Open Contact Section", !1),
           setTimeout(function () {
             t("body").addClass("overflow");
-          }, 1200);
+          }, 100);
       });
     },
     a = function () {
@@ -6748,6 +6748,7 @@ var Util = (function (t) {
           p = t("#loader-after"),
           d = t(".cookie-banner");
         f.addClass("is-hidden"),
+        // t(".loader-content").addClass("is-hidden"),
           t("body").addClass("loaded"),
           // t("body").removeClass("no-scroll"),
           n(),
