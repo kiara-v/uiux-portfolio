@@ -55,27 +55,10 @@
                         <a href="#case-studies" data-scroll itemprop="url" class="no-smoothState no-single-work">Case
                             Studies</a>
                     </li>
-                    <!-- <li itemprop="name"><a href="#experiments" data-scroll itemprop="url"
-                            class="no-smoothState no-single-work">Experiments</a></li> -->
-                    <!-- <li class="in-single-work">
-                        <a href="index.html" data-destination="home" rel="nofollow"><span aria-label="Back"
-                                class="nav-link-icon"><svg xmlns="http://www.w3.org/2000/svg" width="476.2"
-                                    height="476.2" viewbox="174 -174.2 476.2 476.2">
-                                    <path
-                                        d="M244.6 134.5l21.2-21.2-34.4-34.4h418.8v-30H231.4l34.4-34.4-21.2-21.2L174 63.9">
-                                    </path>
-                                </svg></span>Back Home</a>
-                    </li> -->
                     <li class="in-single-work">
                         <a href="#" id="all-works" rel="nofollow" class="no-smoothState">All Works</a>
                     </li>
                     <li><a href="#" class="no-smoothState open-contact">Contact</a></li>
-                    <!-- <li class="no-single-work"><a href="#" id="change-theme" class="no-smoothState no-single-work"><svg
-                                xmlns="http://www.w3.org/2000/svg" viewbox="0 0 285.919 285.919">
-                                <path
-                                    d="M142.959 0C64.131 0 0 64.132 0 142.96s64.131 142.959 142.959 142.959 142.96-64.131 142.96-142.959S221.787 0 142.959 0zm0 260.919V25c65.043 0 117.96 52.917 117.96 117.96 0 65.043-52.917 117.959-117.96 117.959z">
-                                </path>
-                            </svg></a></li> -->
                 </ul>
             </div>
         </nav>
@@ -533,7 +516,7 @@
                             </div>
                         </div>
                         <div class="form-message-content">
-                            <div class="form-message">Default Message</div>
+                            <div class="form-message">Thanks for messaging!</div>
                         </div>
                     </div>
                     <div class="form-loader-before"></div>
@@ -543,26 +526,27 @@
                             New projects, freelance inquiry or even a coffee.
                         </p>
                         <div class="inner-container">
-                            <form id="contact-form" method="post" action="https://formspree.io/f/xvoeqoer" class="the-form no-smoothState">
+                            <form id="contact-form" method="post" action="https://api.staticforms.xyz/submit" class="the-form no-smoothState">
+                                <input type="hidden" name="accessKey" value="5210c5bb-2295-4016-8eef-6811da1efa37">
                                 <div class="input">
-                                    <input  type="text" id="Name" name="Name" required/>
-                                    <label for="Name" class="label">Name</label>
+                                    <input type="text" id="name" name="name" required /><label for="name"
+                                        class="label">Name</label>
                                 </div>
 
                                 <div class="input email">
-                                    <input type="email" id="Email" name="Email" required/>
-                                    <label for="Email" class="label">E-mail</label>
+                                    <input type="email" id="email" name="email" required /><label for="email"
+                                        class="label">E-mail</label>
                                 </div>
 
                                 <div class="input">
-                                    <textarea id="Message" name="Message" required></textarea>
-                                    <label for="Message" class="label">Message</label>
+                                    <textarea id="message" name="message" required></textarea><label for="message"
+                                        class="label">Message</label>
                                 </div>
 
                                 <div class="inner-container">
-                                    <button class="the-button submit-button" type="submit" id="fcf-button">
+                                    <button type="submit" class="the-button submit-button">
                                         <span class="button-text">Send Message</span>
-                                        <!-- <div class="button-mask"></div> -->
+                                        <div class="button-mask"></div>
                                     </button>
                                 </div>
                             </form>
@@ -694,31 +678,7 @@
             </div>
         </div>
     </footer>
-    <!-- <script src="../ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> -->
     <script src="js/jquery.min.js"></script>
-    <!-- <script type="text/javascript">
-        (function (i, s, o, g, r, a, m) {
-            i["GoogleAnalyticsObject"] = r;
-            (i[r] =
-                i[r] ||
-                function () {
-                    (i[r].q = i[r].q || []).push(arguments);
-                }),
-                (i[r].l = 1 * new Date());
-            (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m);
-        })(
-            window,
-            document,
-            "script",
-            "../www.google-analytics.com/analytics.js",
-            "ga"
-        );
-        ga("create", "UA-62939051-2", "auto");
-        ga("send", "pageview");
-    </script> -->
     <script>
 
         (function (i, s, o, g, r, a, m) {
@@ -735,7 +695,6 @@
 
     </script>
     <script src="vendor/typed.js/typed.umd.js"></script>
-    <!-- <script src="vendor/php-email-form/validate.js"></script> -->
     <script src="js/script.js"></script>
     <script src="js/typing.js"></script>
 </body>

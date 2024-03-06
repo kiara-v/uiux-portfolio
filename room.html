@@ -354,7 +354,7 @@
                         </div>
                     </div>
                     <div class="form-message-content">
-                        <div class="form-message">Default Message</div>
+                        <div class="form-message">Thanks for messaging!</div>
                     </div>
                 </div>
                 <div class="form-loader-before"></div>
@@ -362,18 +362,29 @@
                     <h3 class="h4 form-title">Let’s talk.</h3>
                     <p class="form-subtitle">New projects, work inquiry or even a coffee.</p>
                     <div class="inner-container">
-                        <form id="contact-form" method="post" action="contact.php"
-                            class="the-form no-smoothState">
-                            <div class="input required"><input type="text" id="name" name="name"><label
-                                    class="label">Name</label></div>
-                            <div class="input required email"><input type="text" id="email" name="email"><label
-                                    class="label">E-mail</label></div>
-                            <div class="input required"><textarea id="message" name="message"></textarea><label
-                                    class="label">Message</label></div>
-                            <div class="inner-container"><button type="submit" disabled
-                                    class="the-button submit-button"><span class="button-text">Send Message</span>
+                        <form id="contact-form" method="post" action="https://api.staticforms.xyz/submit" class="the-form no-smoothState">
+                            <input type="hidden" name="accessKey" value="5210c5bb-2295-4016-8eef-6811da1efa37">
+                            <div class="input">
+                                <input type="text" id="name" name="name" required /><label for="name"
+                                    class="label">Name</label>
+                            </div>
+
+                            <div class="input email">
+                                <input type="email" id="email" name="email" required /><label for="email"
+                                    class="label">E-mail</label>
+                            </div>
+
+                            <div class="input">
+                                <textarea id="message" name="message" required></textarea><label for="message"
+                                    class="label">Message</label>
+                            </div>
+
+                            <div class="inner-container">
+                                <button type="submit" class="the-button submit-button">
+                                    <span class="button-text">Send Message</span>
                                     <div class="button-mask"></div>
-                                </button></div>
+                                </button>
+                            </div>
                         </form>
                     </div>
                     <div class="close-contact"><span></span><span></span></div>
