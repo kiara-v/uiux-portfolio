@@ -98,7 +98,7 @@
     transition: all 0.25s;
   }
   .nav-links a:before {
-    background-color: #235aa6;
+    background-color: var(--blue);
     transition: all 0.25s cubic-bezier(0.694, 0.048, 0.335, 1) 0.15s;
   }
   .nav-links a:after,
@@ -164,14 +164,14 @@
   }
   .mobile-menu:before {
     transition-delay: 0.25s;
-    background-color: #f06449;
-    background: linear-gradient(270deg, #f06449, #ee2828);
+    background-color: var(--orange);
+    background: linear-gradient(270deg, var(--orange), #ee2828);
     z-index: 24;
   }
   .mobile-menu:after {
     transition-delay: 0.15s;
-    background-color: #060c1d;
-    background: linear-gradient(270deg, #235aa6, #101b3b);
+    background-color: var(--navy);
+    background: linear-gradient(270deg, var(--blue), #101b3b);
     z-index: 25;
   }
   .nav-toggle {
@@ -221,7 +221,7 @@
     display: block;
     width: 0;
     height: 100%;
-    background-color: #235aa6;
+    background-color: var(--blue);
     transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
   }
   .menu-trigger-bar.middle {

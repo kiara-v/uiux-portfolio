@@ -1,11 +1,11 @@
 .footer {
     width: 100%;
-    background: #060c1d;
+    background: var(--navy);
     padding: 8% 0;
   }
   .footer,
   .footer a {
-    color: #f3f3f3;
+    color: var(--offwhite);
   }
   .footer-logo {
     display: block;
@@ -74,11 +74,11 @@
     padding: 15px 0;
     font-family: League Spartan, Helvetica, Arial, sans-serif;
     position: relative;
-    color: #f3f3f3;
+    color: var(--offwhite);
     transition: color 0.3s ease;
   }
   .footer-links a:before {
-    background-color: #235aa6;
+    background-color: var(--blue);
     transition: all 0.25s cubic-bezier(0.694, 0.048, 0.335, 1) 0.15s;
   }
   .footer-links a:after,
@@ -97,7 +97,7 @@
     transition: all 0.25s cubic-bezier(0.694, 0.048, 0.335, 1);
   }
   .footer-links a:hover {
-    color: #f3f3f3;
+    color: var(--offwhite);
     text-decoration: none;
   }
   @media only screen and (min-width: 64em) {

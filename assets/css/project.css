@@ -5,7 +5,7 @@
     padding: 85px 0;
     text-align: center;
     overflow: hidden;
-    background-color: #060c1d;
+    background-color: var(--navy);
   }
   .single-work-giga-text {
     font-size: 11.875em;
@@ -21,7 +21,7 @@
     height: 200px;
   }
   .single-work-giga-text svg path {
-    fill: #fff;
+    fill: white;
   }
   @media only screen and (min-width: 103.125em) {
     .single-work-giga-text {
@@ -34,7 +34,7 @@
     display: inline-block;
     font-size: 3.75em;
     margin-bottom: 20px;
-    color: #fff;
+    color: white;
     overflow: hidden;
     position: relative;
     line-height: 1.3;
@@ -47,7 +47,7 @@
   .single-work-intro-title span:before {
     content: attr(data-letters);
     position: absolute;
-    color: #fff;
+    color: white;
     left: 0;
     overflow: hidden;
     white-space: nowrap;
@@ -62,7 +62,7 @@
     top: 0;
     right: 0;
     z-index: 1;
-    /* background: #fff; */
+    /* background: white; */
     -webkit-transform: translate3d(101%, 0, 0);
     transform: translate3d(101%, 0, 0);
     transition: -webkit-transform 0.3s cubic-bezier(0.694, 0.048, 0.335, 1);
@@ -114,7 +114,7 @@
   .single-work-intro-text {
     width: 58%;
     margin: 0 auto;
-    color: #fff;
+    color: white;
     position: relative;
     z-index: 1;
   }
@@ -189,13 +189,13 @@
   .single-work-content-separator {
     width: 27%;
     height: 4px;
-    background-color: #235aa6;
+    background-color: var(--blue);
     margin: 26px 0;
   }
   .single-work-content-desc a,
   .single-work-content-desc span,
   .single-work-content-desc strong {
-    color: #f06449;
+    color: var(--orange);
   }
   .single-work-content-desc a {
     text-decoration: underline;
@@ -243,7 +243,7 @@
     width: 160px;
     height: 160px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: white;
     box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.33);
     border-radius: 50%;
     transition: all 0.3s;
@@ -273,7 +273,7 @@
     box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.23);
   }
   .color-palette-section .color-palette-container:hover .color-palette-name {
-    color: #f06449;
+    color: var(--orange);
   }
   .single-work-font {
     float: left;
@@ -307,7 +307,7 @@
     padding: 45px 0;
     position: relative;
     overflow: hidden;
-    background-color: #fff;
+    background-color: white;
     border-top: 1px solid #eee;
   }
   .next-work .content {
@@ -331,12 +331,12 @@
     transform: translateY(-100%);
   }
   .next-work:before {
-    background-color: #f06449;
+    background-color: var(--orange);
     transition-delay: 0.12s;
     z-index: 2;
   }
   .next-work:after {
-    background-color: #235aa6;
+    background-color: var(--blue);
     z-index: 1;
   }
   .next-work .next-work-lead,
@@ -363,7 +363,7 @@
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: #f06449;
+    background-color: var(--orange);
     z-index: -1;
   }
   .next-work .next-work-arrow {
@@ -389,14 +389,14 @@
     height: 70px;
   }
   .next-work .next-work-arrow svg path {
-    fill: #060c1d;
+    fill: var(--navy);
     transition: all 0.3s ease;
   }
   .next-work:focus .next-work-lead,
   .next-work:focus .next-work-title,
   .next-work:hover .next-work-lead,
   .next-work:hover .next-work-title {
-    color: #fff;
+    color: white;
   }
   .next-work:focus:after,
   .next-work:focus:before,
@@ -413,7 +413,7 @@
   }
   .next-work:focus .next-work-arrow svg path,
   .next-work:hover .next-work-arrow svg path {
-    fill: #fff;
+    fill: white;
   }
   .room .single-work-intro-section {
     background-color: #060c10;

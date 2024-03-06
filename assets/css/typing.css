@@ -45,7 +45,7 @@
   }
   
   #hero p span {
-    color: #f06449;
+    color: var(--orange);
     letter-spacing: 1px;
   }
   

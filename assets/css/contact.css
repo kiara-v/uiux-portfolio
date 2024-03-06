@@ -23,7 +23,7 @@ fieldset {
     color: #dadada;
   }
   .form-subtitle {
-    color: #f3f3f3;
+    color: var(--offwhite);
     font-size: 0.75em;
   }
   .the-form {
@@ -99,7 +99,7 @@ fieldset {
     z-index: 10;
   }
   .the-form .input:after {
-    background: #f06449;
+    background: var(--orange);
     z-index: 9;
   }
   .the-form .input:nth-child(4):after,
@@ -134,7 +134,7 @@ fieldset {
       -webkit-transform 0.45s cubic-bezier(0.694, 0.048, 0.335, 1);
   }
   .form-loader {
-    background-color: #235aa6;
+    background-color: var(--blue);
     transition-delay: 0.2s;
     z-index: 20;
   }
@@ -153,7 +153,7 @@ fieldset {
     animation: stripe 1.8s cubic-bezier(0.694, 0.048, 0.335, 1) 0.2s infinite;
   }
   .form-loader-before {
-    background-color: #f06449;
+    background-color: var(--orange);
     z-index: 19;
   }
   .form-loader-content {
@@ -190,7 +190,7 @@ fieldset {
     transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1) 0.65s;
     transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1) 0.65s,
       -webkit-transform 0.35s cubic-bezier(0.4, 0, 0.2, 1) 0.65s;
-    color: #fff;
+    color: white;
   }
 
   .about-contact {
@@ -259,7 +259,7 @@ fieldset {
     z-index: 60;
   }
   .about-contact .half-contact.is-about .contact-info {
-    color: #060c1d;
+    color: var(--navy);
   }
   .about-contact .half-contact.is-about .giga-text {
     top: -10px;
@@ -269,7 +269,7 @@ fieldset {
   .about-contact .half-contact.is-contact {
     -webkit-transform: translateY(100%);
     transform: translateY(100%);
-    background-color: #060c1d;
+    background-color: var(--navy);
     left: auto;
     right: 0;
     transition: opacity 0.3s,
@@ -285,12 +285,12 @@ fieldset {
   .about-contact .half-contact.is-contact .giga-text {
     bottom: -30px;
     right: -200px;
-    color: #fff;
+    color: white;
     opacity: 0.03;
   }
   .about-contact .half-contact.is-contact input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 1000px #060c1d inset;
-    -webkit-text-fill-color: #fff !important;
+    -webkit-box-shadow: 0 0 0 1000px var(--navy) inset;
+    -webkit-text-fill-color: white !important;
   }
   .about-contact .giga-text {
     font-size: 190px;
@@ -323,7 +323,7 @@ fieldset {
     top: -22px;
     right: -5px;
     cursor: pointer;
-    color: #fff;
+    color: white;
     width: 35px;
     height: 35px;
     transition: all 0.3s ease;
@@ -338,7 +338,7 @@ fieldset {
     transition: all 0.4s cubic-bezier(0.694, 0.048, 0.335, 1);
   }
   .close-contact span:before {
-    background-color: #f06449;
+    background-color: var(--orange);
     transition: all 0.3s ease;
   }
   .close-contact span:after,
@@ -351,7 +351,7 @@ fieldset {
     height: 100%;
   }
   .close-contact span:after {
-    background-color: #f3f3f3;
+    background-color: var(--offwhite);
     transition: all 0.3s ease 0.3s;
   }
   .close-contact span:first-child {
@@ -396,7 +396,7 @@ fieldset {
     font-size: 0.875em;
   }
   .about-me-text strong {
-    color: #f06449;
+    color: var(--orange);
   }
   .about-me-list {
     margin: 0;
@@ -441,7 +441,7 @@ fieldset {
     display: block;
   }
   .about-me-list li svg path {
-    fill: #060c1d;
+    fill: var(--navy);
     transition: all 0.3s;
   }
   .about-me-list li:hover .about-me-list-label {

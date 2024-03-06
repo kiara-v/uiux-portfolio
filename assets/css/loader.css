@@ -1,5 +1,5 @@
 body.loaded {
-    background-color: #f3f3f3 !important;
+    background-color: var(--offwhite) !important;
 }
 
 .no-scroll {
@@ -152,6 +152,6 @@ body.loaded {
     left: -100%;
     width: 100%;
     height: 100%;
-    background-color: #f06449;
+    background-color: var(--orange);
     z-index: 61;
   }
