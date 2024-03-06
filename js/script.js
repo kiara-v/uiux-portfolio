@@ -336,10 +336,10 @@
                 .not(l.prefetchBlacklist)
                 .on(l.prefetchOn, null, x);
           },
-          k = function (t) {
-            l.anchors && (t.on("click", l.anchors, w), O(t)),
-              l.forms && t.on("submit", l.forms, b);
-          },
+          // k = function (t) {
+          //   l.anchors && (t.on("click", l.anchors, w), O(t)),
+          //     l.forms && t.on("submit", l.forms, b);
+          // },
           C = function () {
             var t = u.prop("class");
             u.removeClass(t), a.redraw(u), u.addClass(t);
@@ -6393,74 +6393,74 @@ var Util = (function (t) {
       };
     return { init: o, manageChangePageNavLinks: r };
   })(jQuery),
-  Form = (function (t) {
-    "use strict";
-    var e = function (t) {
-      return !!/[0-9\-\.\_a-z]+@[0-9\-\.a-z]+\.[a-z]+/.test(t);
-    },
-      i = function () {
-        var i = t("#contact-form"),
-          n = t("#name"),
-          r = t("#email"),
-          s = t("#message"),
-          o = i.find(".submit-button");
-        i.find("input, textarea").on("keyup", function () {
-          "" !== n.val() && "" !== r.val() && e(r.val()) && "" !== s.val()
-            ? o.prop("disabled", !1)
-            : o.prop("disabled", !0);
-        });
-      },
-      n = function () {
-        var e = t("#contact-half"),
-          i = t("#contact-form"),
-          n = i.attr("action"),
-          r = i.find(".submit-button"),
-          s = t(".form-message");
-        i.on("submit", function (o) {
-          o.preventDefault();
-          var a = i.serialize();
-          Util.sendGAEvent("Contact", "Try Contact me", !1),
-            e.addClass("is-form-processing"),
-            t
-              .ajax({ type: "POST", url: n, data: a })
-              .done(function (t) {
-                s.text(t),
-                  setTimeout(function () {
-                    e.removeClass("error").addClass("success");
-                  }, 2e3),
-                  setTimeout(function () {
-                    e.removeClass("is-form-processing");
-                  }, 6e3),
-                  setTimeout(function () {
-                    e.removeClass("success"), r.prop("disabled", !0);
-                  }, 7e3),
-                  Util.sendGAEvent("Contact", "Contact Success", !1),
-                  i.find("input, textarea").val("");
-              })
-              .fail(function (t) {
-                "" !== t.responseText
-                  ? s.text(t.responseText)
-                  : s.text(
-                    "An error occured and your message could not be sent."
-                  ),
-                  setTimeout(function () {
-                    e.removeClass("success").addClass("error");
-                  }, 2e3),
-                  setTimeout(function () {
-                    e.removeClass("is-form-processing");
-                  }, 6e3),
-                  setTimeout(function () {
-                    e.removeClass("error");
-                  }, 7e3),
-                  Util.sendGAEvent("Contact", "Contact Error", !1);
-              });
-        });
-      },
-      r = function () {
-        n(), i();
-      };
-    return { init: r };
-  })(jQuery),
+  // Form = (function (t) {
+  //   "use strict";
+  //   var e = function (t) {
+  //     return !!/[0-9\-\.\_a-z]+@[0-9\-\.a-z]+\.[a-z]+/.test(t);
+  //   },
+  //     i = function () {
+  //       var i = t("#contact-form"),
+  //         n = t("#name"),
+  //         r = t("#email"),
+  //         s = t("#message"),
+  //         o = i.find(".submit-button");
+  //       i.find("input, textarea").on("keyup", function () {
+  //         "" !== n.val() && "" !== r.val() && e(r.val()) && "" !== s.val()
+  //           ? o.prop("disabled", !1)
+  //           : o.prop("disabled", !0);
+  //       });
+  //     },
+  //     n = function () {
+  //       var e = t("#contact-half"),
+  //         i = t("#contact-form"),
+  //         n = i.attr("action"),
+  //         r = i.find(".submit-button"),
+  //         s = t(".form-message");
+  //       i.on("submit", function (o) {
+  //         o.preventDefault();
+  //         var a = i.serialize();
+  //         Util.sendGAEvent("Contact", "Try Contact me", !1),
+  //           e.addClass("is-form-processing"),
+  //           t
+  //             .ajax({ type: "POST", url: n, data: a })
+  //             .done(function (t) {
+  //               s.text(t),
+  //                 setTimeout(function () {
+  //                   e.removeClass("error").addClass("success");
+  //                 }, 2e3),
+  //                 setTimeout(function () {
+  //                   e.removeClass("is-form-processing");
+  //                 }, 6e3),
+  //                 setTimeout(function () {
+  //                   e.removeClass("success"), r.prop("disabled", !0);
+  //                 }, 7e3),
+  //                 Util.sendGAEvent("Contact", "Contact Success", !1),
+  //                 i.find("input, textarea").val("");
+  //             })
+  //             .fail(function (t) {
+  //               "" !== t.responseText
+  //                 ? s.text(t.responseText)
+  //                 : s.text(
+  //                   "An error occured and your message could not be sent."
+  //                 ),
+  //                 setTimeout(function () {
+  //                   e.removeClass("success").addClass("error");
+  //                 }, 2e3),
+  //                 setTimeout(function () {
+  //                   e.removeClass("is-form-processing");
+  //                 }, 6e3),
+  //                 setTimeout(function () {
+  //                   e.removeClass("error");
+  //                 }, 7e3),
+  //                 Util.sendGAEvent("Contact", "Contact Error", !1);
+  //             });
+  //       });
+  //     },
+  //     r = function () {
+  //       n(), i();
+  //     };
+  //   return { init: r };
+  // })(jQuery),
   Cookie = (function (t) {
     "use strict";
     var e = t(".cookie-banner"),
@@ -6634,7 +6634,7 @@ var Util = (function (t) {
                 Util.init(),
                   // Util.onPageVisibilityChange(),
                   Navigation.init(),
-                  Form.init(),
+                  // Form.init(),
                   Cookie.init(),
                   AnimationManager.init(),
                   i(),
@@ -6845,7 +6845,7 @@ var Util = (function (t) {
             // Util.onPageVisibilityChange(),
             // Util.addConsoleCopy(),
             Navigation.init(),
-            Form.init(),
+            // Form.init(),
             Cookie.init(),
             AnimationManager.init(),
             t(".main-hero").length && AnimationManager.animateHeroShapes();

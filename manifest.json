@@ -1,0 +1,8 @@
+{
+	"name": "Kiara Vong",
+	"theme_color": "#191a21",
+	"display": "standalone",
+	"externally_connectable": {
+		"matches": ["*://*.google.com/*"]
+	}
+}
