@@ -1464,9 +1464,9 @@ button[disabled] {
   -webkit-transform: translateY(-120%) !important;
   transform: translateY(-120%) !important;
 }
-.main-navigation.view-in-scroll {
+/* .main-navigation.view-in-scroll {
   background: rgba(28, 29, 37, 0.9);
-}
+} */
 .nav-logo {
   float: left;
   padding: 10px 0;
@@ -3143,72 +3143,7 @@ textarea {
     z-index: 60;
   }
 }
-#page-transition {
-  position: fixed;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background-color: #26408b;
-  z-index: 62;
-}
-#page-transition.room {
-  background-color: #060c10;
-}
-#page-transition.room + #page-transition-after {
-  background-color: #168dd9;
-}
-#page-transition.lato {
-  background-color: #00c8e7;
-}
-#page-transition.lato + #page-transition-after {
-  background-color: #292f43;
-}
-#page-transition.la-francesca {
-  background-color: #d16335;
-}
-#page-transition.la-francesca + #page-transition-after {
-  background-color: #ece6da;
-}
-#page-transition.sportland {
-  background-color: #c62b2e;
-}
-#page-transition.sportland + #page-transition-after {
-  background-color: #54a416;
-}
-#page-transition-after {
-  position: fixed;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background-color: #f06449;
-  z-index: 61;
-}
-.page-transition-content {
-  position: absolute;
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  width: 300px;
-  height: 90px;
-  opacity: 1;
-  visibility: visible;
-  transition: all 0.3s ease;
-  z-index: 70;
-}
-.page-transition-content.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-}
-.page-transition-content svg {
-  display: block;
-  width: 220px;
-  height: 220px;
-}
+
 section {
   width: 100%;
   display: block;

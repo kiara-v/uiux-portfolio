@@ -33,7 +33,7 @@
     <div id="page-transition-after"></div>
     <div id="page-wrap">
         <nav itemscope itemtype="http://schema.org/SiteNavigationElement" class="main-navigation">
-            <div class="content nav-content"><a href="index.html" data-destination="home" itemprop="url"
+            <div class="content nav-content"><a href="index.html" target="_self" data-destination="home" itemprop="url"
                     class="nav-logo"><svg xmlns="http://www.w3.org/2000/svg" version="1.0"
                         viewBox="55.17 22 453.63 521.74">
                         <path fill="#FFFFFF"
@@ -48,19 +48,18 @@
                             class="menu-trigger-bar top"></i><i class="menu-trigger-bar middle"></i><i
                             class="menu-trigger-bar bottom"></i></span></div>
                 <ul class="nav-links">
-                    <li itemprop="name"><a href="index.html#case-studies" data-scroll itemprop="url"
+                    <li itemprop="name"><a href="index.html#case-studies" target="_self" data-scroll itemprop="url"
                             class="no-smoothState no-single-work">Case Studies</a></li>
                     <!-- <li itemprop="name"><a href="#experiments" data-scroll itemprop="url"
                             class="no-smoothState no-single-work">Experiments</a></li> -->
-                    <li class="in-single-work"><a href="index.html" data-destination="home" rel="nofollow"><span
+                    <li class="in-single-work"><a href="index.html" target="_self" data-destination="home" rel="nofollow"><span
                                 aria-label="Back" class="nav-link-icon"><svg xmlns="http://www.w3.org/2000/svg"
                                     width="476.2" height="476.2" viewbox="174 -174.2 476.2 476.2">
                                     <path
                                         d="M244.6 134.5l21.2-21.2-34.4-34.4h418.8v-30H231.4l34.4-34.4-21.2-21.2L174 63.9">
                                     </path>
                                 </svg></span>Back Home</a></li>
-                    <li class="in-single-work"><a href="#" id="all-works" rel="nofollow" class="no-smoothState">All
-                            Works</a></li>
+                    <!-- <li class="in-single-work"><a href="index.html#case-studies" target="_self" id="all-works" rel="nofollow" class="no-smoothState">All Works</a></li> -->
                     <li><a href="#" class="no-smoothState open-contact">Contact</a></li>
                     <!-- <li class="no-single-work"><a href="#" id="change-theme" class="no-smoothState no-single-work"><svg
                                 xmlns="http://www.w3.org/2000/svg" viewbox="0 0 285.919 285.919">
@@ -453,7 +452,7 @@
                 </svg></span>Close</div>
     </div>
     <footer itemscope itemtype="http://schema.org/WPFooter" class="footer">
-        <div class="content"><a href="#top" data-scroll class="footer-logo no-smoothstate"><img src="img/logo.svg"
+        <div class="content"><a href="#page-wrap" data-scroll class="footer-logo no-smoothstate"><img src="img/logo.svg"
                     alt="Kiara Vong's Personal Logo">
                 <div class="footer-logo-top-label">Top<div class="footer-logo-top-icon"><svg
                             xmlns="http://www.w3.org/2000/svg" viewbox="0 0 31.479 31.479">
@@ -482,8 +481,8 @@
             </div>
         </div>
     </footer>
-    <script src="../ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\\/script>');</script>
+    <!-- <script src="../ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> -->
+    <script src="js/jquery.min.js"></script>
     <script>(function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
                 (i[r].q = i[r].q || []).push(arguments)
