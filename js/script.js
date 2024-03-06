@@ -6749,8 +6749,9 @@ var Util = (function (t) {
           d = t(".cookie-banner");
         f.addClass("is-hidden"),
           t("body").addClass("loaded"),
+          t("body").removeClass("no-scroll"),
           n(),
-          TweenLite.to(p, 0.67, {
+          TweenLite.to(p, 0.47, {
             x: "100%",
             ease: Power4.easeInOut,
             onComplete: function () {

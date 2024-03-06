@@ -2,6 +2,10 @@ body.loaded {
     background-color: #f3f3f3 !important;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 #page-wrap {
     opacity: 0;
 }
