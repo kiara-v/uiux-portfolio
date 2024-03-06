@@ -382,9 +382,9 @@ fieldset {
       transform: rotate(45deg);
     }
   }
-  .about-me-title {
+  /* .about-me-title {
     margin-top: 20px;
-  }
+  } */
   .about-me-subtitle {
     font-size: 0.75em;
     font-family: LibreBaskerville-Regular, Palatino Linotype, Times New Roman,
