@@ -6749,7 +6749,7 @@ var Util = (function (t) {
           d = t(".cookie-banner");
         f.addClass("is-hidden"),
           t("body").addClass("loaded"),
-          t("body").removeClass("no-scroll"),
+          // t("body").removeClass("no-scroll"),
           n(),
           TweenLite.to(p, 0.47, {
             x: "100%",
@@ -6760,8 +6760,9 @@ var Util = (function (t) {
                   h(),
                   t("#logo-anim").length && l(),
                   setTimeout(function () {
+                    t("body").removeClass("no-scroll"),
                     i();
-                  }, 300);
+                  }, 100);
               }, 750);
             },
           });
