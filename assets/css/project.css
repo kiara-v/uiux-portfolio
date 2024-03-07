@@ -213,6 +213,7 @@
   .single-work-img-content img {
     display: block;
     width: 80%;
+    height: auto;
     margin-left: 10%;
     transition: -webkit-transform 0.3s;
     transition: transform 0.3s;
