@@ -6268,6 +6268,7 @@ var Util = (function (t) {
           t("body").addClass("is-contact-open"),
           Util.sendGAEvent("Contact", "Open Contact Section", !1),
           setTimeout(function () {
+            window.scrollTo(0, 0);
             t("body").addClass("overflow");
           }, 100);
       });
