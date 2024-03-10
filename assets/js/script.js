@@ -6506,7 +6506,7 @@ var Util = (function (t) {
     var e = function (e) {
       var i = t("#page-transition"),
         n = e.data("destination");
-      i.removeClass("home room lato la-francesca sportland").addClass(n);
+      i.removeClass("home room ab la-francesca sportland").addClass(n);
     },
       i = function () {
         t(document).on("click", "#change-theme", function (e) {
@@ -6908,11 +6908,15 @@ window.addEventListener( "pageshow", function ( event ) {
                               window.performance.navigation.type === 2 );
   if ( historyTraversal ) {
     // Handle page restore.
-    window.location.reload();
+    window.scrollTo(0, 0);
+    // window.location.reload();
   }
 });
 
-// window.onbeforeunload = function () {
-//   window.scrollTo(0, 0);
-// }
+window.onunload = function () {
+  window.scrollTo(0, 0);
+}
 
+// window.addEventListener("popstate", () => {
+//   window.scrollTo(0, 0);
+// });

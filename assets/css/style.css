@@ -230,17 +230,17 @@ body.overflow {
   overflow: hidden;
 }
 ::-moz-selection {
-  background: var(--navy);
+  background: var(--orange);
   color: var(--offwhite);
   text-shadow: none;
 }
 ::selection {
-  background: var(--navy);
+  background: var(--orange);
   color: var(--offwhite);
-  text-shadow: none;
+  /* text-shadow: none; */
 }
 ::-webkit-selection {
-  background: var(--navy);
+  background: var(--orange);
   color: var(--offwhite);
   text-shadow: none;
 }
