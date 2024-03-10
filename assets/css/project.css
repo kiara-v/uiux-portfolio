@@ -136,6 +136,15 @@
     
   }
 
+  .text-center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 6%;
+    
+  }
+
   .double-work-content {
     display: flex;
     justify-content: center;
